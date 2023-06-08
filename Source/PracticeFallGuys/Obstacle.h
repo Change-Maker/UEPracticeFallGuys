@@ -32,6 +32,9 @@ public:
   UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Movement")
   FVector MovingVelocity = FVector::ZeroVector;
 
+  UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Rotation")
+  FRotator RotatingVelocity = FRotator::ZeroRotator;
+
 private:
   UPROPERTY()
   FVector StartLocation = FVector::ZeroVector;

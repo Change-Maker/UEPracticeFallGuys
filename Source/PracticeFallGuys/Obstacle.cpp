@@ -36,4 +36,6 @@ void AObstacle::Tick(float DeltaTime)
       MovingVelocity = -MovingVelocity;
     }
   }
+
+  AddActorLocalRotation(RotatingVelocity * DeltaTime);
 }
